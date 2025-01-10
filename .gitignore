@@ -1,0 +1,22 @@
+# Xcode
+*.xcworkspace
+*.xcuserdata
+DerivedData/
+build/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# CocoaPods
+Pods/
+podfile.lock
+
+# macOS-specific files
+.DS_Store
+
+# Logs
+*.log
+*.xcactivitylog
+
