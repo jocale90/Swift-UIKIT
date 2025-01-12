@@ -9,20 +9,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mybutton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+        view.backgroundColor = .orange
+
+        mybutton.backgroundColor = .black
+        mybutton.tintColor = .white
+        mybutton.layer.cornerRadius = 10.0
+        mybutton.layer.masksToBounds = true
         
-        view.backgroundColor = .blue
-        let myView = UIView()
-        myView.frame = CGRect(x: 100, y: 50, width: 200, height: 100)
-        myView.backgroundColor = .white
-        view.addSubview(myView)
-        
-        
-        
+        view.addSubview(mybutton)
     }
 
 
+    @IBAction func touchMyButtonAction(_ sender: Any) {
+            print("My button was touched")
+    }
+    
+    
+    
 }
 
